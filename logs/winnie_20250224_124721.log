@@ -1,0 +1,3 @@
+{"timestamp": "2025-02-24T12:48:38.005249", "type": "connection_attempt", "source_ip": "127.0.0.1", "service": "ssh", "details": {"port": 60650}}
+{"timestamp": "2025-02-24T12:48:49.268103", "type": "auth_attempt", "source_ip": "127.0.0.1", "service": "ssh", "details": {"username": "aidan", "password": "MystraW1zard!", "success": false}}
+{"timestamp": "2025-02-24T12:48:56.874427", "type": "auth_attempt", "source_ip": "127.0.0.1", "service": "ssh", "details": {"username": "aidan", "password": "Dilbert8756!", "success": false}}
