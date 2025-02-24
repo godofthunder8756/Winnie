@@ -40,7 +40,7 @@ Winnie is a modern, user-friendly honeypot monitoring system designed to detect,
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/winnie.git
+git clone https://github.com/godofthunder8756/winnie.git
 cd winnie
 ```
 
