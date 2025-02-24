@@ -7,34 +7,9 @@ from .dashboard import Dashboard
 from services.service_manager import ServiceManager
 from utils.ip_utils import get_host_ip
 from .alert_widget import AlertWidget
-
-class IPDisplayWidget(QFrame):
-    def __init__(self):
-        super().__init__()
-        self.setFrameStyle(QFrame.Shape.StyledPanel | QFrame.Shadow.Raised)
-        self.setStyleSheet("""
-            QFrame {
-                background-color: #2c3e50;
-                border-radius: 10px;
-                padding: 10px;
-            }
-            QLabel {
-                color: white;
-            }
-        """)
-        
-        layout = QVBoxLayout(self)
-        
-        title = QLabel("Honeypot IP Address")
-        title.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        title.setStyleSheet("font-size: 14px; font-weight: bold;")
-        
-        self.ip_label = QLabel(get_host_ip())
-        self.ip_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.ip_label.setStyleSheet("font-size: 32px; font-weight: bold; color: #3498db;")
-        
-        layout.addWidget(title)
-        layout.addWidget(self.ip_label)
+from .reports_widget import ReportsWidget
+from .api_config_widget import APIConfigWidget
+from .ip_display_widget import IPDisplayWidget
 
 class ServiceControlWidget(QGroupBox):
     def __init__(self, service_manager):
@@ -130,7 +105,7 @@ class MainWindow(QMainWindow):
         layout = QVBoxLayout(central_widget)
         
         # Add IP display at the top
-        layout.addWidget(IPDisplayWidget())
+        layout.addWidget(IPDisplayWidget(self.alert_manager))
         
         # Create tab widget
         tabs = QTabWidget()
@@ -151,7 +126,11 @@ class MainWindow(QMainWindow):
         tabs.addTab(alerts_widget, "Alerts")
         
         # Add reports tab
-        reports_widget = QWidget()
+        reports_widget = ReportsWidget(self.alert_manager)
         tabs.addTab(reports_widget, "Reports")
+        
+        # Add API configuration tab
+        api_config_widget = APIConfigWidget()
+        tabs.addTab(api_config_widget, "API Configuration")
         
         layout.addWidget(tabs) 
