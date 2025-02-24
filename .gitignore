@@ -1,1 +1,10 @@
-.venv
+# Ignore virtual environment
+.venv/
+
+# Ignore logs and alerts folders
+logs/*
+alerts/*
+
+# Optional: Keep the folders but ignore their contents
+!logs/.gitkeep
+!alerts/.gitkeep
