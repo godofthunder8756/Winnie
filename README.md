@@ -138,5 +138,5 @@ For support, please:
 3. Create a new issue if needed
 
 ---
-Created with ❤️ by Aidan Ahern
-```
+Created with ☕ by Aidan Ahern
+
