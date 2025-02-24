@@ -35,7 +35,9 @@ Winnie is a modern, user-friendly honeypot monitoring system designed to detect,
   - Custom API endpoints
   - Configurable authentication
   - External system integration
-
+![Winnie Screenshot](docs/winniess2.png)
+![Winnie Screenshot](docs/winniess3.png)
+![Winnie Screenshot](docs/winniess4.png)
 ## Installation
 
 1. Clone the repository:
