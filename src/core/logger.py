@@ -3,22 +3,30 @@ import json
 from pathlib import Path
 
 class Logger:
-    def __init__(self):
+    def __init__(self, analyzer):
+        self.analyzer = analyzer
         self.log_dir = Path("logs")
         self.log_dir.mkdir(exist_ok=True)
-        self.current_log_file = self.log_dir / f"winnie_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
         
     def log_event(self, event_type, source_ip, service, details):
+        """Log a security event"""
+        timestamp = datetime.datetime.now().isoformat()
+        
         event = {
-            "timestamp": datetime.datetime.now().isoformat(),
+            "timestamp": timestamp,
             "type": event_type,
             "source_ip": source_ip,
             "service": service,
             "details": details
         }
         
-        with open(self.current_log_file, "a") as f:
+        # Send event to analyzer
+        self.analyzer.analyze_event(event)
+        
+        # Log to file
+        log_file = self.log_dir / f"winnie_{datetime.date.today().strftime('%Y%m%d')}.log"
+        with open(log_file, "a") as f:
             json.dump(event, f)
             f.write("\n")
         
-        return event 
+        print(f"Logged event: {event_type} from {source_ip}")  # Debug print 

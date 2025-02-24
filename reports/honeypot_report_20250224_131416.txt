@@ -1,0 +1,348 @@
+Honeypot Activity Report
+=======================
+
+Generated: 2025-02-24T13:14:16.463996
+
+Summary:
+Total Alerts: 31
+Unique Sources: 1
+
+Alert Types:
+- port_scan: 23
+- ssh_error: 1
+- ssh_probe: 1
+- ssh_probe_error: 2
+- ftp_auth_attempt: 4
+
+Detailed Alerts:
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:19.004785
+Details: {
+  "port": 43972,
+  "timestamp": "2025-02-24T13:13:19.004044",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:19.005162
+Details: {
+  "timestamp": "2025-02-24T13:13:19.005157",
+  "type": "quick_disconnect"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:21.519080
+Details: {
+  "port": 43986,
+  "timestamp": "2025-02-24T13:13:21.518418",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:13:22.190983
+Details: {
+  "port": 46488,
+  "timestamp": "2025-02-24T13:13:22.189624",
+  "type": "initial_connection"
+}
+
+---
+Type: ssh_error
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:13:22.192230
+Details: {
+  "error": "[WinError 10054] An existing connection was forcibly closed by the remote host",
+  "timestamp": "2025-02-24T13:13:22.191976"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:23.831642
+Details: {
+  "port": 43994,
+  "timestamp": "2025-02-24T13:13:23.831006",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:23.832018
+Details: {
+  "timestamp": "2025-02-24T13:13:23.832009",
+  "type": "quick_disconnect"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:24.150134
+Details: {
+  "port": 43998,
+  "timestamp": "2025-02-24T13:13:24.149552",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:13:24.150219
+Details: {
+  "port": 46498,
+  "timestamp": "2025-02-24T13:13:24.149628",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:29.190070
+Details: {
+  "port": 58350,
+  "timestamp": "2025-02-24T13:13:29.189509",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:13:29.190157
+Details: {
+  "port": 47608,
+  "timestamp": "2025-02-24T13:13:29.189577",
+  "type": "initial_connection"
+}
+
+---
+Type: ssh_probe
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:13:29.191150
+Details: {
+  "client_version": "",
+  "timestamp": "2025-02-24T13:13:29.190801"
+}
+
+---
+Type: ssh_probe_error
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:13:29.261080
+Details: {
+  "error": "Error reading SSH protocol banner",
+  "timestamp": "2025-02-24T13:13:29.260766"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:34.212234
+Details: {
+  "port": 58364,
+  "timestamp": "2025-02-24T13:13:34.211664",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:39.333621
+Details: {
+  "port": 42556,
+  "timestamp": "2025-02-24T13:13:39.333055",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:44.365032
+Details: {
+  "port": 42560,
+  "timestamp": "2025-02-24T13:13:44.364478",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:49.466681
+Details: {
+  "port": 38314,
+  "timestamp": "2025-02-24T13:13:49.466152",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:49.471039
+Details: {
+  "port": 38330,
+  "timestamp": "2025-02-24T13:13:49.470706",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:49.478855
+Details: {
+  "port": 38334,
+  "timestamp": "2025-02-24T13:13:49.478547",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:13:49.483697
+Details: {
+  "port": 42282,
+  "timestamp": "2025-02-24T13:13:49.483396",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:49.503001
+Details: {
+  "port": 38336,
+  "timestamp": "2025-02-24T13:13:49.502548",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:13:49.503172
+Details: {
+  "port": 42290,
+  "timestamp": "2025-02-24T13:13:49.502595",
+  "type": "initial_connection"
+}
+
+---
+Type: ftp_auth_attempt
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:49.614856
+Details: {
+  "command": "USER anonymous",
+  "timestamp": "2025-02-24T13:13:49.614121"
+}
+
+---
+Type: ftp_auth_attempt
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:49.614980
+Details: {
+  "command": "USER anonymous",
+  "timestamp": "2025-02-24T13:13:49.614035"
+}
+
+---
+Type: ftp_auth_attempt
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:49.727460
+Details: {
+  "command": "PASS IEUser@",
+  "timestamp": "2025-02-24T13:13:49.727117"
+}
+
+---
+Type: ftp_auth_attempt
+Source: 192.168.50.194
+Service: ftp
+Time: 2025-02-24T13:13:49.727758
+Details: {
+  "command": "PASS IEUser@",
+  "timestamp": "2025-02-24T13:13:49.727388"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:13:54.587581
+Details: {
+  "port": 42300,
+  "timestamp": "2025-02-24T13:13:54.587059",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:13:59.797842
+Details: {
+  "port": 39296,
+  "timestamp": "2025-02-24T13:13:59.797279",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:14:04.875956
+Details: {
+  "port": 39300,
+  "timestamp": "2025-02-24T13:14:04.875424",
+  "type": "initial_connection"
+}
+
+---
+Type: port_scan
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:14:09.976791
+Details: {
+  "port": 58604,
+  "timestamp": "2025-02-24T13:14:09.976162",
+  "type": "initial_connection"
+}
+
+---
+Type: ssh_probe_error
+Source: 192.168.50.194
+Service: ssh
+Time: 2025-02-24T13:14:11.259290
+Details: {
+  "error": "Error reading SSH protocol banner",
+  "timestamp": "2025-02-24T13:14:11.258843"
+}
